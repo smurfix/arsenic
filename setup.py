@@ -1,3 +1,5 @@
+#!/usr/bin/python3.6
+
 from setuptools import setup, find_packages
 
 
