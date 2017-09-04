@@ -1,3 +1,9 @@
+arsenic (1.0.0~dev6-3) smurf; urgency=medium
+
+  * Redirect stdin from /dev/null
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Mon, 04 Sep 2017 20:53:09 +0200
+
 arsenic (1.0.0~dev6-2) smurf; urgency=medium
 
   * Fix dependencies

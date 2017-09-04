@@ -50,6 +50,7 @@ async def run_subprocess(cmd: List[str]) -> str:
     check_event_loop()
     process = await asyncio.create_subprocess_exec(
         *cmd,
+        stdin=DEVNULL,
         stdout=PIPE,
         stderr=PIPE
     )
@@ -70,6 +71,7 @@ async def subprocess_based_service(cmd: List[str],
             log_file = DEVNULL
         process = await asyncio.create_subprocess_exec(
             *cmd,
+            stdin=DEVNULL,
             stdout=log_file,
             stderr=log_file,
         )
